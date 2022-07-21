@@ -48,10 +48,16 @@ void loop() {
   return distance;
 }
 
+/*probably forced to use analog pins for motors because the rover wont be able to stop :(*/
 void rotateRight(){ //rotating the wheels in opposite directions will allow for rotation (I think)
 digitalWrite(trMotor, HIGH);
 digitalWrite(brMotor, HIGH);
 digitalWrite(tlMotor, LOW);
 digitalWrite(blMotor, LOW);
-
+}
+void rotateLEFT(){ //rotating the wheels in opposite directions will allow for rotation (I think)
+digitalWrite(trMotor, LOW);
+digitalWrite(brMotor, LOW);
+digitalWrite(tlMotor, HIGH);
+digitalWrite(blMotor, HIGH);
 }
