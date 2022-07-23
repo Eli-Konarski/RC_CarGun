@@ -1,1 +1,1 @@
-# Gun hat shoots feet
+# Gun that shoots feet
