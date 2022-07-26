@@ -1,5 +1,5 @@
 //Hello My Name Is Eli Konarski, This Is A Rover With A Nerf Gun Attachment (main purpose is to shoot feet without hem noticing)
-
+// 
 //Sonar 1
   int echoPin1 = 3;
   int initPin1 = 2;
@@ -48,16 +48,38 @@ void loop() {
   return distance;
 }
 
+void controls(){
+    Serial.print("placeholder");
+
+  }
+
 /*probably forced to use analog pins for motors because the rover wont be able to stop :(*/
 void rotateRight(){ //rotating the wheels in opposite directions will allow for rotation (I think)
-digitalWrite(trMotor, HIGH);
-digitalWrite(brMotor, HIGH);
-digitalWrite(tlMotor, LOW);
-digitalWrite(blMotor, LOW);
+  digitalWrite(trMotor, HIGH);
+  digitalWrite(brMotor, HIGH);
+  digitalWrite(tlMotor, LOW);
+  digitalWrite(blMotor, LOW);
 }
 void rotateLEFT(){ //rotating the wheels in opposite directions will allow for rotation (I think)
-digitalWrite(trMotor, LOW);
-digitalWrite(brMotor, LOW);
-digitalWrite(tlMotor, HIGH);
-digitalWrite(blMotor, HIGH);
+  digitalWrite(trMotor, LOW);
+  digitalWrite(brMotor, LOW);
+  digitalWrite(tlMotor, HIGH);
+  digitalWrite(blMotor, HIGH);
 }
+void Foward(){
+  digitalWrite(trMotor, HIGH);
+  digitalWrite(brMotor, HIGH);
+  digitalWrite(tlMotor, HIGH);
+  digitalWrite(blMotor, HIGH);
+}
+void Backward(){
+  digitalWrite(trMotor, LOW);
+  digitalWrite(brMotor, LOW);
+  digitalWrite(tlMotor, LOW);
+  digitalWrite(blMotor, LOW);
+} 
+void idle(){
+  Serial.print("placeholder");
+//figure out later  
+  
+  }
